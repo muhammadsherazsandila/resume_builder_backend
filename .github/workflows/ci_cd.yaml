@@ -33,7 +33,6 @@ jobs:
           push: true
           tags: |
             ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.REPO_NAME }}:latest
-            ${{ secrets.DOCKERHUB_USERNAME }}/${{ secrets.REPO_NAME }}:${{ github.sha }}
 
       # 5️⃣ Verify pushed image
       - name: Verify Docker image
