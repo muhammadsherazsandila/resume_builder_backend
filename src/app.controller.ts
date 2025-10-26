@@ -9,4 +9,8 @@ export class AppController {
   getHello(): string {
     return this.appService.getHello();
   }
+  @Get('/message')
+  getMessage(): string {
+    return this.appService.getMessage();
+  }
 }
